@@ -8,13 +8,17 @@ class Answer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      child: ElevatedButton(
-        child: Text(answerText),
-        onPressed: answerHandler,
-        style: ElevatedButton.styleFrom(
-          primary: Colors.blue,
+    return Center(
+      child: Container(
+        width: double.infinity,
+        padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+        color: Colors.black,
+        child: ElevatedButton(
+          child: Text(answerText),
+          onPressed: answerHandler,
+          style: ElevatedButton.styleFrom(
+            primary: Colors.blue,
+          ),
         ),
       ),
     );
